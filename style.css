@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  gap: 56em;
+  margin-top: 3%;
+}
+.logo {
+  display: flex;
+  gap: 5px;
+}
+
+header button {
+  margin-right: 5%;
+  position: absolute;
+  color: hsla(322, 100%, 66%, 0.619);
+  right: 0;
+  border: 1px solid hsla(321, 100%, 78%, 0.664);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  background: white;
+  box-shadow: 1px 1px 1px hsla(321, 100%, 78%, 0.316),
+    -1px -1px 1px hsla(321, 100%, 78%, 0.316);
+}
+
+header button:hover {
+  color: hsla(322, 76%, 74%, 0.591);
+  border: 1px solid hsla(321, 100%, 78%, 0.412);
+  box-shadow: 1px 1px 3px hsla(321, 100%, 78%, 0.316),
+    -1px -1px 3px hsla(321, 100%, 78%, 0.316);
+}
+
+.header {
+  margin-left: -5%;
+  margin-top: 10%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.heading-text {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.get-started {
+  margin-top: 2%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.get-started > button {
+  padding: 15px;
+  border-radius: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: none;
+  background: hsl(322, 100%, 66%);
+  color: white;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.337);
+}
+.get-started > button:hover {
+  background: hsl(321, 100%, 78%);
+}
+.hero {
+  margin-top: 10%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 70%;
+}
+
+.info {
+  margin-top: 5%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20em;
+}
+
+.stats h1 {
+  font-size: 62px;
+}
+
+.flex-grow {
+  background-color: hsl(207, 100%, 98%);
+}
+
+.flex-grow {
+  display: flex;
+  justify-content: center;
+  gap: 20em;
+}
+
+.flex-grow img {
+  width: 50%;
+}
+
+.grow-text {
+  text-align: left;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.conversation {
+  display: flex;
+}
+
+.conversation img {
+  width: 50%;
+  margin-left: 10%;
+}
+
+.comm-text {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.user-flex {
+  display: flex;
+  background-color: hsl(207, 100%, 98%);
+}
+
+.user-flex img {
+  width: 50%;
+}
+
+.user-text {
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.start {
+  margin-top: 6%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.start > h1 {
+  margin-bottom: 2%;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.615);
+  font-size: 12px;
+  display: none;
+}
+
+input:invalid + .error {
+  display: inline;
+  position: absolute;
+  margin-top: 10%;
+  min-width: 100%;
+  margin-left: -70%;
+}
+
+.start-btn {
+  padding: 15px;
+  border-radius: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: none;
+  background: hsl(322, 100%, 66%);
+  color: white;
+}
+
+.start-btn:hover {
+  background: hsl(321, 100%, 78%);
+}
+
+footer {
+  margin-top: 10%;
+  color: white;
+  font-size: 12px;
+}
+
+.flex {
+  background-color: hsl(192, 100%, 9%);
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 70px;
+}
+
+.icons {
+  margin-top: 10%;
+  display: flex;
+  gap: 20px;
+}
+
+.newsletter {
+  float: right;
+  position: absolute;
+  right: 0;
+  margin-top: -10em;
+  margin-right: 5%;
+  font-size: 12px;
+}
+
+form {
+  margin-top: 5%;
+}
+
+form input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+form button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: hsl(322, 100%, 66%);
+  border: none;
+  color: white;
+}
+
+form button:hover {
+  background: hsl(321, 100%, 78%);
+}
+
+.newsletter > h2 {
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 500px) {
+  .btm-mb,
+  .top-mb,
+  .grow-mb,
+  .grow-mb-top {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .grow-text {
+    min-width: 100%;
+    margin: 0;
+    margin-left: 5%;
+    font-size: 0.7rem;
+  }
+
+  .header h1 {
+    color: blue;
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .flex-grow {
+    gap: 1em;
+  }
+
+  .stats {
+    gap: 7em;
+  }
+
+  .flex-grow img {
+    width: 20%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .footer-mb {
+    display: none;
+  }
+
+  .btm-mb,
+  .top-mb,
+  .grow-mb,
+  .grow-mb-top {
+    display: none;
+  }
+}
+
+.contacts {
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+  .stats,
+  .flex-grow,
+  .user-flex,
+  .flex,
+  .conversation {
+    display: block;
+  }
+
+  body {
+    font-size: 0.8rem;
+    /* display: grid;
+    place-items: center;
+    align-items: center; */
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .flex-grow img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .conversation img {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .user-flex img {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .user-btm-img,
+  .user-top-img {
+    display: none;
+  }
+
+  .grow-top,
+  .grow-btm {
+    display: none;
+  }
+
+  .growing {
+    width: 100%;
+  }
+
+  .user-flex {
+    width: 100%;
+  }
+
+  .flex-grow {
+    width: 100%;
+  }
+
+  .footer-curve {
+    display: none;
+  }
+
+  .stats {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    gap: 10em;
+  }
+
+  .newsletter {
+    float: none;
+    display: block;
+    all: unset;
+    margin-top: 5%;
+  }
+
+  .hero img {
+    width: 40%;
+  }
+
+  .footer-curve {
+    display: none;
+  }
+
+  .email {
+    margin-bottom: 2em;
+  }
+
+  .header h1 {
+    font-size: 1.7rem;
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .heading-text {
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .grow-text {
+    text-align: center;
+  }
+
+  .comm-text {
+    text-align: center;
+  }
+
+  .user-text {
+    text-align: center;
+  }
+
+  .start {
+    text-align: center;
+  }
+
+  #header-logo {
+    width: 25%;
+    position: absolute;
+    left: -13%;
+  }
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  margin-top: 2%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
